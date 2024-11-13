@@ -632,7 +632,7 @@ HAVING
 --Sinh viên hoàn thành Phần III bài tập QuanLyGiaoVu từ câu 26 đến câu 35.
 
 --26. Tìm học viên (mã học viên, họ tên) có số môn đạt điểm 9, 10 nhiều nhất. 
-SELECT HOCVIEN.MAHV,
+SELECT TOP 1 WITH TIES HOCVIEN.MAHV,
 	   HO,
 	   TEN
 FROM 
